@@ -70,4 +70,4 @@ task = "packager.installForAll"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "vercel login"
+args = "vercel --token $VERCEL_TOKEN --yes && vercel --prod --token $VERCEL_TOKEN --yes"
